@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(21, 47, 108);
+}
+#box{
+    margin-top: 250px;
+}
+#box1{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: url(./image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#moon{
+    width: 100px;
+    position: relative;
+    top: -450px;
+    left: -70px
+}
+#ast{
+    width: 250px;
+    position: relative;
+    top: -250px;
+    left: 40px;
+    animation: 7s ani infinite;
+}
+#button{
+    color: white;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    padding: 10px;
+    border: 2px solid white; 
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgb(21, 47, 108);
+}
+@keyframes ani{
+    0%{
+        transform: translateY(15px);
+    }
+    25%{
+        transform: translateY(35px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    75%{
+        transform: translateY(35px);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+@media only screen and(max-width:400px) {
+    #moon{
+        position: relative;
+        top: -500px;
+        left: 70px;
+    }
+}
